@@ -1,4 +1,4 @@
-export class Snake {
+export class Ladder {
     private headIndex;
     private tailIndex;
 
@@ -7,7 +7,7 @@ export class Snake {
         this.tailIndex=tail;
     }
 
-    public bite(){
+    public getOnladder(){
         //statements
     }
 }
