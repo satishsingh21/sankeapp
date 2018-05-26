@@ -1,13 +1,13 @@
 export class Ladder {
-    private headIndex;
-    private tailIndex;
+    public headIndex:number;
+    public tailIndex:number;
 
     constructor(head:number, tail:number) {
         this.headIndex=head;
         this.tailIndex=tail;
     }
 
-    public getOnladder(){
+    public getOnLadder(){
         //statements
     }
 }
