@@ -8,5 +8,7 @@ export class Goti {
         this.color = color;
     }
     
-    moveForwad(){}
+    moveForwad(){
+
+    }
 }

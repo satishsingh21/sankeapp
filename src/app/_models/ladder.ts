@@ -7,7 +7,7 @@ export class Ladder {
         this.tailIndex=tail;
     }
 
-    public getOnLadder(){
-        //statements
+    public getOnLadder():number{
+        return this.headIndex
     }
 }

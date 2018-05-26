@@ -1,3 +1,7 @@
 export class Dice {
-    giveRandomNumber(){}
+
+    giveRandomNumber(){
+
+    }
+    
 }

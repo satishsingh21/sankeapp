@@ -7,8 +7,7 @@ export class Snake {
         this.tailIndex=tail;
     }
 
-    bite(){
-        //statements
-
+    bite():number{
+       return this.tailIndex;
     }
 }
