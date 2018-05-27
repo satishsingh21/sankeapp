@@ -9,11 +9,19 @@ import { Game } from '../_models/game';
 })
 export class GameComponent implements OnInit {
   public game: Game;
-  
-  constructor(){}
+
+  constructor(){
+    //get value from html
+    this.game = new Game(['A','B']);
+  }
 
   ngOnInit() {
-    
+   
+  }
+
+  // dice onclick
+  rollDice(){
+    this.game.play();
   }
 
 }

@@ -9,9 +9,12 @@ export class Game {
     public ladders: Ladder[];
     public snakes: Snake[];
     public dice: Dice;
+    public nextTurn : number;
     
     // bug: handele two or more snakes or ladder having same head or tail position
     public constructor(nameOfPlayers : string[]) {
+        this.nextTurn = 0;
+
         // initialize player objects
         this.players = Player[nameOfPlayers.length];
         for(let i = 0; i < nameOfPlayers.length; i++){
@@ -37,5 +40,15 @@ export class Game {
 
         // initialize dice object
         this.dice = Dice.getInstance();
+    }
+
+    //call play function
+    //trigger dice
+    //update goti position
+    public play () : void {
+        // return value from dice
+        let diceValue = this.dice.giveNumber()
+
+        this.players[1].goti.position += diceValue;
     }
 }

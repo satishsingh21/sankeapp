@@ -9,4 +9,8 @@ export class Player {
         this.goti = new Goti();
     }
 
+    public updatePosition(val){
+        //pass dice value to 
+        this.goti.updatePosition(val) 
+    }
 }

@@ -14,7 +14,7 @@ export class Goti {
         Goti.count++;
     }
 
-    moveForwad(){
-        this.position
+    public pdatePosition(val:number):number{
+       return  this.position + val
     }
 }
