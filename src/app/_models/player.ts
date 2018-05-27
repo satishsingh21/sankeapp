@@ -1,10 +1,12 @@
 import { Goti } from "./goti";
 
 export class Player {
-    public name : string;
-    public goti : Goti;
+    private name : string;
+    private goti : Goti;
 
     constructor(name : string){
         this.name = name;
+        this.goti = new Goti();
     }
+
 }

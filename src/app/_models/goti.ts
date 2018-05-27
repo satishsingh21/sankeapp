@@ -1,13 +1,19 @@
 export class Goti {
 
-    public sIndex : number;
-    public color : string;
+    private position : number;
+    private color : string;
 
-    constructor(startIndex : number, color:string) {
-        this.sIndex = startIndex;
-        this.color = color;
+    // max no of player  is playing would be 4
+    private static colors : string[] = ['Red','Yellow','Green','Blue'];
+    private static count:number = 0 ;
+
+
+    constructor() {
+        this.position = 1;
+        this.color = Goti.colors[Goti.count];
+        Goti.count++;
     }
-    
+
     moveForwad(){
 
     }
