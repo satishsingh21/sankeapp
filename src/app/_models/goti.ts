@@ -15,6 +15,6 @@ export class Goti {
     }
 
     moveForwad(){
-
+        this.position
     }
 }

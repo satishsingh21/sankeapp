@@ -9,6 +9,7 @@ export class Snake {
 
     public static factory(headPos: number, tailPos: number): Snake {
         // Validate
+        
         if (headPos < 0 ||
             headPos > 100 ||
             tailPos < 0 ||

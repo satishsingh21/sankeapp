@@ -4,7 +4,7 @@ export class Player {
     private name : string;
     private goti : Goti;
 
-    constructor(name : string){
+    public constructor(name : string){
         this.name = name;
         this.goti = new Goti();
     }
