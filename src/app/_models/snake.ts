@@ -28,7 +28,11 @@ export class Snake {
     }
 
     public canBite(gotiCurrentPos: number): number {
-        return this.tailPosition;
+        if(gotiCurrentPos == this.headPosition ){
+            return this.tailPosition;
+        }
+
+        return -1; 
     }
 
 }

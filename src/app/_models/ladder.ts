@@ -29,6 +29,9 @@ export class Ladder {
     }
 
     public canMoveUp(gotiCurrentPos : number) : number{
-        return this.headPosition;
+        if(gotiCurrentPos == this.tailPosition ){
+            return this.headPosition;
+        }
+        return -1;
     }
 }

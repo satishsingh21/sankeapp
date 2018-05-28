@@ -1,6 +1,6 @@
 export class Goti {
 
-    private position : number;
+    public position : number;
     private color : string;
 
     // max no of player  is playing would be 4
@@ -14,7 +14,12 @@ export class Goti {
         Goti.count++;
     }
 
-    public pdatePosition(val:number):number{
-       return  this.position + val
+    public updatePosition(val : number) : void{
+       this.position = val;
     }
+
+    public moveForward(val : number) : void{
+        this.position + val;
+    }  
 }
+ 
